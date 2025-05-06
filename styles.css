@@ -1,0 +1,311 @@
+/* 全局样式 */
+:root {
+    --primary-color: #1e88e5;
+    --secondary-color: #0d47a1;
+    --accent-color: #64b5f6;
+    --light-bg: #f5f7fa;
+    --dark-text: #333;
+    --light-text: #fff;
+    --section-padding: 3rem 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* 头部样式 */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.competition {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--light-text);
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+}
+
+/* 区块样式 */
+.section {
+    padding: var(--section-padding);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 2rem;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+/* 项目背景样式 */
+#project-background .content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#project-background p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+/* 核心功能样式 */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* 研究成果样式 */
+.results-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.result-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.result-item ul {
+    padding-left: 1.5rem;
+}
+
+.result-item li {
+    margin-bottom: 0.5rem;
+}
+
+.chart-container {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+}
+
+.chart-placeholder {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 产学研一体样式 */
+.cooperation {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cooperation > p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cooperation-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.coop-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.coop-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 视频部分样式 */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-placeholder {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px dashed #ccc;
+}
+
+/* 联系我们样式 */
+.contact-info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.team-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+}
+
+.team-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav a {
+        padding: 0.8rem 1rem;
+    }
+    
+    .features, 
+    .results-content,
+    .cooperation-items {
+        grid-template-columns: 1fr;
+    }
+} 
