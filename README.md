@@ -1,41 +1,63 @@
-# 以太哨兵 (Ether Sentinel)
+# EtherSentinel - Blockchain Security Analysis System
 
-基于图大模型的区块链安全一体化检测平台
+EtherSentinel is a comprehensive blockchain security analysis system that leverages GNN-BERT for detecting and analyzing potential security threats in blockchain transactions and accounts.
 
-## 项目简介
+## Features
 
-以太哨兵是一个基于图大模型的区块链安全一体化检测平台，旨在通过图神经网络和大规模预训练模型，构建区块链交易和合约调用的知识图谱，实现智能化、高效率、高准确度的安全威胁检测。
+1. **Transaction Analysis**
+   - Pattern recognition in transaction flows
+   - Anomaly detection
+   - Smart contract interaction analysis
 
-本项目是第18届中国大学生计算机设计大赛大数据应用-大数据实践赛的参赛作品。
+2. **Account Analysis**
+   - Account behavior profiling
+   - Risk scoring
+   - Historical activity analysis
 
-## 核心功能
+3. **Real-time Monitoring**
+   - Live transaction monitoring
+   - Instant threat detection
+   - Alert system
 
-- **智能合约漏洞检测**：采用图神经网络分析合约代码结构，精确识别重入、溢出、权限控制等各类安全漏洞
-- **异常交易监测**：通过图大模型学习正常交易模式，实时发现价格操纵、闪电贷攻击等异常行为
-- **地址画像分析**：构建地址交互网络，识别高风险地址群组，追踪资金流向，预警潜在威胁
-- **安全风险评估**：综合多维度数据，为DApp、DeFi项目提供全面安全评分和改进建议
+## Project Structure
 
-## 技术亮点
+```
+EtherSentinel/
+├── models/                 # Trained models and model definitions
+├── data/                  # Data storage and processing
+├── src/                   # Source code
+│   ├── analysis/         # Analysis modules
+│   ├── models/           # Model architecture
+│   ├── utils/            # Utility functions
+│   └── monitoring/       # Real-time monitoring
+├── config/               # Configuration files
+├── notebooks/            # Jupyter notebooks for analysis
+└── tests/               # Unit tests
+```
 
-- 自主研发的EtherGraph图构建算法，准确捕捉区块链交易网络结构特征
-- 基于图注意力机制的异常检测模型，F1-score达到95.7%
-- 智能合约形式化验证与图模型结合的双重检测机制
+## Installation
 
-## 项目展示
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-本仓库包含以太哨兵项目的宣传网站，用于展示项目概况、核心功能、研究成果等信息。
+## Usage
 
-### 网站结构
+1. Configure your environment variables in `.env`
+2. Run the analysis:
+```bash
+python src/main.py
+```
 
-- `index.html`：主页面
-- `styles.css`：样式文件
-- `scripts.js`：交互脚本
-- `images/`：图片资源
+## Model Training
 
-## 团队信息
+The GNN-BERT model can be trained using:
+```bash
+python src/train.py
+```
 
-团队由来自XX大学计算机学院的本科生组成，指导教师为XXX教授。
+## License
 
-## 联系方式
-
-- GitHub仓库：[https://github.com/xrose3159/EtherSentinel](https://github.com/xrose3159/EtherSentinel) 
+MIT License 
