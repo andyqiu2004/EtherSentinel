@@ -2,7 +2,7 @@
 
 > 2025年中国机器人及人工智能大赛 人工智能赛道 作品
 >
-> 可以访问我们的 [作品主页](https://github.com/xrose3159/EtherSentinel) 来了解更多信息
+> 可以访问我们的 [作品主页](https://andyqiu2004.github.io/EtherSentinel/) 来了解更多信息
 
 
 ## 项目背景
