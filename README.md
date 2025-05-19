@@ -1,6 +1,6 @@
 # EtherSentinel - Blockchain Security Analysis System
 
-> 2025年"计算机设计大赛-大数据实践赛" 作品
+> 2025年中国机器人及人工智能大赛 人工智能赛道 作品
 >
 > 可以访问我们的 [作品主页](https://github.com/xrose3159/EtherSentinel) 来了解更多信息
 
