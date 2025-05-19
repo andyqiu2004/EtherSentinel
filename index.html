@@ -5,89 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>以太哨兵 - 基于图大模型的区块链安全一体化检测平台</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* 平台选择弹窗样式 */
-        .platform-select-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        
-        .platform-select-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 600px;
-            width: 90%;
-        }
-        
-        .platform-select-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        
-        .platform-options {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .platform-option {
-            flex: 1;
-            min-width: 200px;
-            padding: 20px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .platform-option:hover {
-            border-color: #4285f4;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-5px);
-        }
-        
-        .platform-name {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .platform-desc {
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
 </head>
 <body>
-    <!-- 平台选择弹窗 -->
-    <div id="platformSelectOverlay" class="platform-select-overlay">
-        <div class="platform-select-container">
-            <div class="platform-select-title">请选择要访问的平台</div>
-            <div class="platform-options">
-                <div class="platform-option" id="etherSentinelOption">
-                    <div class="platform-name">以太哨兵</div>
-                    <div class="platform-desc">基于图大模型的区块链安全一体化检测平台</div>
-                </div>
-                <div class="platform-option" id="rhythmsWrittingOption">
-                    <div class="platform-name">笔韵智枢</div>
-                    <div class="platform-desc">大数据驱动的智能一体化字体创作引擎</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header>
         <div class="header-content">
             <h1 class="main-title">Ether Sentinel</h1>
@@ -227,29 +146,10 @@
     <footer>
         <div class="container">
             <p>© 2024 以太哨兵团队 版权所有</p>
-            <p>第18届中国大学生计算机设计大赛 大数据应用-大数据实践赛 作品</p>
+            <p>2025年中国机器人及人工智能大赛组委会 人工智能赛道 作品</p>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
-    <script>
-        // 平台选择功能
-        document.addEventListener('DOMContentLoaded', function() {
-            // 获取弹窗和选项元素
-            const overlay = document.getElementById('platformSelectOverlay');
-            const etherSentinelOption = document.getElementById('etherSentinelOption');
-            const rhythmsWrittingOption = document.getElementById('rhythmsWrittingOption');
-            
-            // 以太哨兵选项点击事件
-            etherSentinelOption.addEventListener('click', function() {
-                overlay.style.display = 'none';
-            });
-            
-            // 笔韵智枢选项点击事件
-            rhythmsWrittingOption.addEventListener('click', function() {
-                window.location.href = 'https://xrose3159.github.io/RhythmsWritting/';
-            });
-        });
-    </script>
 </body>
 </html> 
